@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;900&display=swap');
+html{
+  font-family: 'Roboto', sans-serif!important;
+  font-weight:  400!important;
+  color: #212121;
+}
+.text-justify{
+  text-align: justify;
+}
+.transparencia-negra{
+   background: rgba(0, 0, 0, 0.2)!important;
+}
+
+header{
+  position:absolute;
+  top:0;
+  width:100%;
+}
+#barra2{
+  background-color: transparent !important;
+}
+#barra .container{
+  height: 33px!important;
+}
+.menu-top, #main{
+  max-width:  1980px;
+  margin:0 auto;
+}
+.nav-link{
+  color: white!important;
+  font-family: 'Roboto', sans-serif;
+  font-weight:  400!important;
+  padding: 10px 20px!important;
+  font-weight: bold!important;
+}
+.nav-link:hover{
+  color:#14B5E1!important;
+  font-weight:  900!important;
+}
+
+.container h1{
+  font-family: 'Roboto', sans-serif!important;
+  font-weight:  500!important;
+}
+.container h2{
+  font-family: 'Roboto', sans-serif!important;
+  font-weight:  400!important;
+}
+.titular{
+  font-size:2.5em!important;
+  font-weight: 900!important;
+}
+.btn-irpm {
+  background-color: #fff;
+  font-family: 'Roboto', sans-serif;
+  color:#14B5E1!important;
+}
+.btn-irpm:hover {
+  background-color: #14B5E1;
+  font-family: 'Roboto', sans-serif;
+  color:#fff!important;
+}
+.resalte-celeste, .subtitular{
+  color: #14B5E1!important;
+}
+#header img {
+  width: 134px;
+}
+
+#main .carousel-inner img {
+  /*max-height: 90vh;*/
+  max-height:665px;
+  object-fit: cover;
+}
+#carousel, .card-container {
+  position: relative;
+}
+#carousel .overlay, #tarjetas.card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background-color: rgba(0, 0, 0, 0.5);*/
+  color: white;
+}
+.overlay{
+  background: url("../images/detalle-banner.png") no-repeat bottom;
+}
+
+#carousel .overlay .container,
+#carousel .overlay .row,
+.card-img-overlay,
+.card-img-overlay .row{
+  height: 100%;
+}
+
+#tarjetas h5{
+  margin:0 auto;
+}
+#tarjetas .card{
+  height: 353px;
+  overflow:hidden;
+  /*cursor:pointer;*/
+  position:relative;
+  box-shadow: 0 0 6px #666;
+  border: 0;
+}
+.pulso:hover{
+  animation: pulse; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 1s; /* don't forget to set a duration! */
+}
+#tarjetas img{
+  height:353px;
+  width: 450px;
+  position:absolute;
+  left:-100px;
+}
+#seleccionar h4{
+  color:#c4c4c4;
+}
+
+#acerca .card{
+  border: 0;
+}
+.border-right{
+  background: url("../images/linea-punteada.png") no-repeat top left;
+}
+
+#acerca .card img{
+  height:24px;
+  width:auto;
+  margin: 0 auto;
+}
+.btn-outline-info{
+  border:2px solid #14B5E1;
+  color:#14B5E1;
+}
+.btn-outline-info:hover{
+  background-color: #14B5E1;
+  border:2px solid #14B5E1;
+  color:#fff;
+}
+.btn-primary{
+  border:2px solid #14B5E1;
+  background-color: #14B5E1;
+  color:#FFF;
+}
+.btn-primary:hover{
+  background-color: #00c8ff;
+  border:2px solid #00c8ff;
+  color:#fff;
+}
+#contacto {
+  background-color: #c4c4c4;
+  background-image: url("../images/relleno-blanco.jpg");
+  background-repeat: repeat-x;
+}
+.bg-agro{
+  background-image: url("../iconos/agroindustrial.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.bg-industrial{
+  background-image: url("../iconos/industriales.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.bg-terrenos{
+  background-image: url("../iconos/terreno.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.bg-viviendas{
+  background-image: url("../iconos/vivienda-sociales.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.bg-edificios{
+  background-image: url("../iconos/edificios.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+.bg-locales{
+  background-image: url("../iconos/locales.svg");
+  background-position: 5px center;
+  background-repeat: no-repeat;
+}
+#contacto a {
+  color: white;
+}
+#formulario{
+  background-color: #E5E5E5;
+  box-shadow: 0 0 6px #666;
+  padding-right:15px;
+  padding-left: 15px;
+}
+
+#btn-areas, #tab-agro, #tab-industrial, #tab-terrenos, #tab-viviendas, #tab-edificios, #tab-locales{
+  display:none;
+}/*
+////////////cambio de tamaños en responsivo///////////*/
+
+@media (max-width: 993px) {
+  #main h1{
+    font-size: 3em!important;
+  }
+  #main h2{
+    font-size: 2em!important;
+  }
+
+  #navbar{
+   background-color: #14B5E1;
+   padding-top: 10px;
+   padding-bottom: 10px;
+  }
+  #barra2 #navbar{
+   background-color: #FFF;
+   padding-top: 10px;
+   padding-bottom: 10px;
+  }
+  #navbar .nav-link{
+    margin: 0 10px;
+  }
+  #navbar .nav-link:hover{
+    background-color: #fff;
+  }
+  #barra2 #navbar .nav-link:hover{
+    background-color: #14B5E1;
+  }
+  #barra{
+  background-color: #14B5E1!important;
+  }
+}
+
+@media (max-width: 768px) {
+  #main h1{
+    font-size: 2.5em!important;
+  }
+  #main h2{
+    font-size: 1.5em!important;
+  }
+  .border-right{
+    background: transparent;
+  }
+}
+
+@media (max-width: 576px) {
+  #main h1{
+    font-size: 2em!important;
+  }
+  #main h2{
+    padding-top: 50px;
+    font-size: 1em!important;
+  }
+
+}
+}
