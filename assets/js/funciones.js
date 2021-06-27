@@ -3,14 +3,14 @@ $(document).ready(function(){
     $(window).scroll(function(event){
        var scroll = $(this).scrollTop();
        if (scroll > 100){
-			$("#barra").css('display', 'none');
-			$("#barra2").css('display', 'none');
+  		   $("#barra").css('display', 'none');
+  		   $("#barra-sup").css('display', 'none');
        }
 
 
        if (scroll == 0){
-       		$("#barra").css('display', 'block');
-       		$("#barra2").css('display', 'block');
+       	$("#barra").css('display', 'block');
+        $("#barra-sup").css('display', 'block');
        }
     });
 
