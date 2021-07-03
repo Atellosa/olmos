@@ -136,6 +136,18 @@ header{
   font-family: 'Montserrat', sans-serif!important;
   font-weight: 900!important;
 }
+.subtitular2{
+  font-size: 3em;
+  color: #4CAF4C!important;
+  font-family: 'Montserrat', sans-serif!important;
+  font-weight: 700!important;
+}
+.subtitular3{
+  font-size: 2em;
+  color: #4CAF4C!important;
+  font-family: 'Montserrat', sans-serif!important;
+  font-weight: 900!important;
+}
 .cita{
   font-size: 2.5em;
   color: #4CAF4C!important;
@@ -159,7 +171,7 @@ header{
   max-height:750px;
   object-fit: cover;
 }
-#carousel, .card-container, .card-image {
+#carousel, .card-container, .card-image, .info-equipo {
   position: relative;
 }
 #carousel .overlay, #tarjetas.card {
@@ -182,6 +194,23 @@ header{
   width: auto;
   color: white;
   border-top-left-radius:5px;
+}
+.overlay-inf{
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+  height: 140px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.overlay-sup{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  height: 160px;
+  width: 100%;
+  color: white;
 }
 #carousel .overlay .container,
 #carousel .overlay .row,
@@ -262,6 +291,12 @@ header{
   font-size: 1.5em!important;
   color: #999;
 }
+.texto-numero{
+  font-family: 'Montserrat', sans-serif!important;
+  font-size: 2.5em!important;
+  margin-bottom: 0;
+  font-weight: 900!important;
+}
 #contacto a:link, #contacto a:visited{
   font-weight: 500;
   color: #000;
@@ -307,11 +342,38 @@ header{
   background-color:#4CAF4C;
   color: white;
 }
+
+#formulario-prin{
+  box-shadow: 0 0 12px #999;
+  padding:20px 30px;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+#formulario-prin input, #formulario-prin select, #formulario-prin textarea{
+  background-color: #F2F2F2;
+  border-radius: 0;
+  border: 0px;
+}
+#formulario-prin button{
+  background-color:#FFC107!important;
+  color: white;
+  border-radius: 3px!important;
+  padding: 10px 70px;
+  border: 0px;
+}
 #barra-inf p{
   display: block;
   float: left;
   width: auto;
   padding-top: 15px;
+}
+.flotante{
+  position: absolute;
+  top: 350px;
+  width: 100%;
 }
 .imagenes{
   width: 100%; 
@@ -333,6 +395,42 @@ header{
   font-family: 'Montserrat', sans-serif!important;
   font-size: 0.8em!important;
 }
+.linea-naranja{
+  background: url("../iconos-logos/linea-naranja.jpg") repeat-x;
+}
+#conoce{
+  padding-top: 200px;
+}
+////////////slick carrusel///////////
+/* Color of the arrows */
+.slick-next::before, .slick-prev::before {
+  color: black!important;
+}
+
+.slick-carousel {
+  margin: 0 auto;
+  width: 90%;
+}
+/* The width of each slide */
+.slick-slide {
+  height: auto;
+}
+.slick-slide img {
+  display: inline-block;
+  width: 90%;
+  height: auto;
+}
+.slick-active:focus {
+  outline: none;
+}
+.slick-prev:before {
+    content: '←';
+    color: #000!important;
+}
+.slick-next:before {
+    content: '→';
+    color: #000!important;
+}
 ////////////////////////////////////////////////////////
 ////////////cambio de tamaños en responsivo///////////
 ////////////////////////////////////////////////////////
@@ -340,6 +438,9 @@ header{
 @media (max-width: 1250px) {
   #main .carousel-inner img {
     height:600px;
+  }
+  .slick-carousel {
+    margin/top: 100px;
   }
 }
 
@@ -373,6 +474,7 @@ header{
   .subtitular{
     text-align: center;
   }
+
 }
 @media (max-width: 900px) {
   .overlay{
