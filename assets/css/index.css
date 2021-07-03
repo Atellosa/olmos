@@ -174,7 +174,7 @@ header{
 #carousel, .card-container, .card-image, .info-equipo {
   position: relative;
 }
-#carousel .overlay, #tarjetas.card {
+#carousel .overlay, #carousel .overlay2, #tarjetas.card {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -214,6 +214,8 @@ header{
 }
 #carousel .overlay .container,
 #carousel .overlay .row,
+#carousel .overlay2 .container,
+#carousel .overlay2 .row,
 .card-img-overlay,
 .card-img-overlay .row{
   height: 100%;
@@ -451,6 +453,9 @@ header{
   #main h2{
     font-size: 2em!important;
   }
+  .titular {
+    margin-top: 150px;
+  }
   #navbar{
    padding-top: 10px;
    padding-bottom: 10px;
@@ -480,29 +485,16 @@ header{
   .overlay{
     background: url("../certificaciones/fondo-certificaciones-movil.png") no-repeat bottom;
   }
+  .subtitular {
+    font-size: 2em!important;
+  }
 }
 
 @media (max-width: 768px) {
-  #main h1{
-    font-size: 2.5em!important;
-  }
-  #main h2{
-    font-size: 1.5em!important;
-  }
   .border-right{
     background: transparent;
   }
   .linea-punteada{
   background: url("../images/linea-punteada-v.png") repeat-y center 0;
-  }
-}
-
-@media (max-width: 576px) {
-  #main h1{
-    font-size: 2em!important;
-  }
-  #main h2{
-    padding-top: 50px;
-    font-size: 1em!important;
   }
 }
